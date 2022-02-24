@@ -55,190 +55,187 @@
 {# Login Link #}
 {% set class_login = '' %}
 {% if hide_login == 1 %}
-    {% set class_login = 'hide-login' %}
+  {% set class_login = 'hide-login' %}
 {% endif %}
 
 {# Include Header #}
-{% include '@janus/parts/header.html.twig' %}
+{% include '@gt/parts/header.html.twig' %}
 
 {# Main #}
 <div role="main" class="main-container js-quickedit-main-content gt-body-page">
 
-    {# Banner #}
-    {% if page.banner %}
-        {% block banner %}
-            <div id="gt-banner" class="jumbotron-fluid" role="complementary">
-                {{ page.banner }}
-            </div>
-        {% endblock %}
-    {% endif %}
+  {# Banner #}
+  {% if page.banner %}
+    {% block banner %}
+      <div id="gt-banner" class="jumbotron-fluid" role="complementary">
+        {{ page.banner }}
+      </div>
+    {% endblock %}
+  {% endif %}
 
-    {# Content #}
-    <div class="container">
+  {# Content #}
+  <div class="container">
 
-        {# Help #}
-        {% if page.help %}
-            {% block help %}
-                <div id="gt-help" role="complementary">
-                    {{ page.help }}
-                </div>
-            {% endblock %}
-        {% endif %}
-
-        {# Tabs #}
-        {% if page.tabs %}
-            {% block tabs %}
-                <div id="gt-help" role="complementary">
-                    {{ page.tabs }}
-                </div>
-            {% endblock %}
-        {% endif %}
-
-        {# Page Title / Breadcrumbs #}
-        {% if page.breadcrumbs %}
-            {% block breadcrumbs %}
-                <div id="gt-breadcrumbs-title" class="breadcrumb-links" role="complementary">
-                    {{ page.breadcrumbs }}
-                </div>
-            {% endblock %}
-        {% endif %}
-
-        {# Before Content #}
-        {% if page.before_content %}
-            {% block before_content %}
-                <div id="gt-before-content" class="before-content" role="complementary">
-                    {{ page.before_content }}
-                </div>
-            {% endblock %}
-        {% endif %}
-
-    </div>
-
-
-    {# Full Width Before Content #}
-    {% if page.full_width_before_content %}
-        {% block full_width_before_content %}
-            <div id="gt-banner" class="jumbotron-fluid full-width-before-content" role="complementary">
-                {{ page.full_width_before_content }}
-            </div>
-        {% endblock %}
-    {% endif %}
-
-
-    <div class="gt-container container ">
-        <div class="row">
-
-            {# Sidebar First #}
-            {% if page.sidebar_first %}
-                {% block sidebar_first %}
-                    <aside class="col-sm-3 sidebar-first" role="complementary">
-                        {{ page.sidebar_first }}
-                    </aside>
-                {% endblock %}
-            {% endif %}
-
-            {# Content #}
-            {% set content_classes = [
-                page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-                page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-                page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-                page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
-            ] %}
-            <section{{ content_attributes.addClass(content_classes) }}>
-
-                {# Highlighted #}
-                {% if page.highlighted %}
-                    {% block highlighted %}
-                        <div class="highlighted">{{ page.highlighted }}</div>
-                    {% endblock %}
-                {% endif %}
-
-                {# Content #}
-                {% block content %}
-                    <a id="main-content"></a>
-                    <div class="gt-main-content">
-                        {{ page.content }}
-                    </div>
-                {% endblock %}
-            </section>
-
-            {# Sidebar Second #}
-            {% if page.sidebar_second %}
-                {% block sidebar_second %}
-                    <aside class="col-sm-3" class="sidebar-second" role="complementary">
-                        {{ page.sidebar_second }}
-                    </aside>
-                {% endblock %}
-            {% endif %}
-
+    {# Help #}
+    {% if page.help %}
+      {% block help %}
+        <div id="gt-help" role="complementary">
+          {{ page.help }}
         </div>
+      {% endblock %}
+    {% endif %}
+
+    {# Tabs #}
+    {% if page.tabs %}
+      {% block tabs %}
+        <div id="gt-help" role="complementary">
+          {{ page.tabs }}
+        </div>
+      {% endblock %}
+    {% endif %}
+
+    {# Page Title / Breadcrumbs #}
+    {% if page.breadcrumbs %}
+      {% block breadcrumbs %}
+        <div id="gt-breadcrumbs-title" class="breadcrumb-links" role="complementary">
+          {{ page.breadcrumbs }}
+        </div>
+      {% endblock %}
+    {% endif %}
+
+    {# Before Content #}
+    {% if page.before_content %}
+      {% block before_content %}
+        <div id="gt-before-content" class="before-content" role="complementary">
+          {{ page.before_content }}
+        </div>
+      {% endblock %}
+    {% endif %}
+
+  </div>
+
+
+  {# Full Width Before Content #}
+  {% if page.full_width_before_content %}
+    {% block full_width_before_content %}
+      <div id="gt-banner" class="jumbotron-fluid full-width-before-content" role="complementary">
+        {{ page.full_width_before_content }}
+      </div>
+    {% endblock %}
+  {% endif %}
+
+
+  <div class="gt-container container ">
+    <div class="row">
+
+      {# Sidebar First #}
+      {% if page.sidebar_first %}
+        {% block sidebar_first %}
+          <aside class="col-sm-3 sidebar-first" role="complementary">
+            {{ page.sidebar_first }}
+          </aside>
+        {% endblock %}
+      {% endif %}
+
+      {# Content #}
+      {% set content_classes = [
+        page.sidebar_first and page.sidebar_second ? 'col-sm-6',
+        page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
+        page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
+        page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+      ] %}
+      <section{{ content_attributes.addClass(content_classes) }}>
+
+        {# Highlighted #}
+        {% if page.highlighted %}
+          {% block highlighted %}
+            <div class="highlighted">{{ page.highlighted }}</div>
+          {% endblock %}
+        {% endif %}
+
+        {# Content #}
+        {% block content %}
+          <a id="main-content"></a>
+          <div class="gt-main-content">
+            {{ page.content }}
+          </div>
+        {% endblock %}
+      </section>
+
+      {# Sidebar Second #}
+      {% if page.sidebar_second %}
+        {% block sidebar_second %}
+          <aside class="col-sm-3" class="sidebar-second" role="complementary">
+            {{ page.sidebar_second }}
+          </aside>
+        {% endblock %}
+      {% endif %}
+
     </div>
+  </div>
 
-    {# Full Width After Content #}
-    {% if page.full_width_after_content %}
-        {% block full_width_after_content %}
-            <div id="gt-banner" class="jumbotron-fluid full-width-after-content" role="complementary">
-                {{ page.full_width_after_content }}
-            </div>
-        {% endblock %}
-    {% endif %}
+  {# Full Width After Content #}
+  {% if page.full_width_after_content %}
+    {% block full_width_after_content %}
+      <div id="gt-banner" class="jumbotron-fluid full-width-after-content" role="complementary">
+        {{ page.full_width_after_content }}
+      </div>
+    {% endblock %}
+  {% endif %}
 
-    {# After Content #}
-    {% if page.after_content %}
-        {% block after_content %}
-            <div class="container">
-                <div id="gt-after-content" class="after-content" role="complementary">
-                    {{ page.after_content }}
-                </div>
-            </div>
-        {% endblock %}
-    {% endif %}
+  {# After Content #}
+  {% if page.after_content %}
+    {% block after_content %}
+      <div class="container">
+        <div id="gt-after-content" class="after-content" role="complementary">
+          {{ page.after_content }}
+        </div>
+      </div>
+    {% endblock %}
+  {% endif %}
 
-    {# After Full Width Content with Margin #}
-    {% if page.full_width_content %}
-        {% block full_width_content %}
-            <div id="gt-banner" class="jumbotron-fluid after-full-width-content-margin p-3" role="complementary">
-                {{ page.full_width_content }}
-            </div>
-        {% endblock %}
-    {% endif %}
+  {# After Full Width Content with Margin #}
+  {% if page.full_width_content %}
+    {% block full_width_content %}
+      <div id="gt-banner" class="jumbotron-fluid after-full-width-content-margin p-3" role="complementary">
+        {{ page.full_width_content }}
+      </div>
+    {% endblock %}
+  {% endif %}
 
-    {# After Full Width Content without Margin #}
-    {% if page.full_width_content_two %}
-        {% block full_width_content_two %}
-            <div id="gt-banner" class="jumbotron-fluid after-full-width-content-no-margin" role="complementary">
-                {{ page.full_width_content_two }}
-            </div>
-        {% endblock %}
-    {% endif %}
+  {# After Full Width Content without Margin #}
+  {% if page.full_width_content_two %}
+    {% block full_width_content_two %}
+      <div id="gt-banner" class="jumbotron-fluid after-full-width-content-no-margin" role="complementary">
+        {{ page.full_width_content_two }}
+      </div>
+    {% endblock %}
+  {% endif %}
 
 </div>
 
 {# Footer #}
 <footer id="footer" class="gt-footer footer">
-    <div class="row">
-      <div class="col-md-12 order-md-12 logo-footer">
-        {{ page.logo_footer }}
-      </div>
+  <div class="row">
 
-      <div class="col-md-12 order-md-12">
-            {# GT Footer #}
-            {% include '@gt/parts/footer.html.twig' %}
+    <div class="col-md-12 order-md-12">
+      {# GT Footer #}
+      {% include '@gt/parts/footer.html.twig' %}
+    </div>
+
+    {% if super_footer %}
+      <div class="col-md-12 order-md-1">
+        {# Superfooter / Show - Hide #}
+        {# Super-footer #}
+        {% include '@gt/parts/super-footer.html.twig' %}
+        <div class="d-block d-md-none button-bar">
+          <button class="btn-footer w-100" type="button" data-toggle="collapse" data-target="#collapseFooter"
+                  aria-expanded="true" aria-controls="footercollapse">
+          </button>
         </div>
 
-        {% if super_footer %}
-            <div class="col-md-12 order-md-1">
-                {# Superfooter / Show - Hide #}
-                {# Super-footer #}
-                {% include '@gt/parts/super-footer.html.twig' %}
-                <div class="d-block d-md-none button-bar">
-                    <button class="btn-footer w-100" type="button" data-toggle="collapse" data-target="#collapseFooter"
-                            aria-expanded="true" aria-controls="footercollapse">
-                    </button>
-                </div>
+      </div>
+    {% endif %}
 
-            </div>
-        {% endif %}
-
-    </div> {# End Main Row #}
+  </div> {# End Main Row #}
 </footer> {# End Footer #}
