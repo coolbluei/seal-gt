@@ -44,7 +44,7 @@ function styles () {
 // Static Server + watching scss/html files
 function serve () {
   browserSync.init({
-    proxy: 'https://janus.lndo.site',
+    proxy: 'https://sealgt.lndo.site',
   })
 
   gulp.watch([paths.scss.watch], styles).on('change', browserSync.reload)

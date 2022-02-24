@@ -1,6 +1,6 @@
-name: Janus
+name: SEAL GT
 type: theme
-description: 'Janus Custom GT Subtheme'
+description: 'SEAL GT Custom Subtheme'
 core_version_requirement: ^8.8 || ^9
 base theme: gt
 
@@ -38,4 +38,4 @@ regions:
   other: 'Other / Placeholder region'
 
 libraries:
-  - 'janus/global-styling'
+  - 'sealgt/global-styling'

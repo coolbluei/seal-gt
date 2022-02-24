@@ -18,35 +18,6 @@ body #gt-logo {
   height: 1.625rem;
   margin: 0.7rem 0; }
 
-#janushead {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#1e4982));
-  background: -webkit-linear-gradient(black, #1e4982);
-  background: -o-linear-gradient(black, #1e4982);
-  background: linear-gradient(black, #1e4982); }
-  #janushead .container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-  #janushead .janus-logo-container img {
-    height: 9em;
-    padding: 1em 1em 1em 0; }
-  #janushead .janus-header-text {
-    padding-top: 1em; }
-  #janushead .site-name {
-    font-size: 4em;
-    color: #dab30f; }
-  #janushead .site-subname {
-    font-size: 1.5em;
-    color: #e5e5e5;
-    line-height: 1.2; }
-    #janushead .site-subname strong {
-      color: #dab30f;
-      text-transform: uppercase; }
-    #janushead .site-subname em {
-      font-style: unset;
-      font-size: 0.7em; }
-
 .navbar-toggler {
   height: 2.25em;
   -webkit-background-size: contain;
