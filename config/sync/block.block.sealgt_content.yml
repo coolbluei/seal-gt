@@ -1,0 +1,22 @@
+uuid: 0f6c8e22-a27f-433c-90c3-687fabbd8c56
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sealgt
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: sealgt_content
+theme: sealgt
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

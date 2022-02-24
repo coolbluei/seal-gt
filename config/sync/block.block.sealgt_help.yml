@@ -1,0 +1,22 @@
+uuid: 04e8c597-6573-466e-a5e2-c9d18b2a6c51
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - sealgt
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: sealgt_help
+theme: sealgt
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
