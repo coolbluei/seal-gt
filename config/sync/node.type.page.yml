@@ -1,20 +1,13 @@
-uuid: cf05e703-1888-42e5-9ddb-1e36a547fb8d
+uuid: 76212dc9-bb70-41d6-b8e1-5525ef850bd0
 langcode: en
 status: true
-dependencies:
-  module:
-    - menu_ui
-third_party_settings:
-  menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+dependencies: {  }
 _core:
   default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
 name: 'Basic page'
 type: page
 description: 'Use <em>basic pages</em> for your static content, such as an ''About us'' page.'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false
