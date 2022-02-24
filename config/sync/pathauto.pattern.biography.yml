@@ -1,0 +1,22 @@
+uuid: cbe1577f-c73d-468b-9227-10cce86ffdef
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: biography
+label: Biography
+type: 'canonical_entities:node'
+pattern: '/bio/[node:title]'
+selection_criteria:
+  8abc67ee-bc7d-43cb-adca-c3f067d78557:
+    id: node_type
+    bundles:
+      biography: biography
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8abc67ee-bc7d-43cb-adca-c3f067d78557
+selection_logic: and
+weight: -5
+relationships: {  }

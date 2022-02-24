@@ -1,0 +1,37 @@
+name: sealgt
+recipe: drupal8
+config:
+  php: '7.4'
+  via: 'nginx'
+  webroot: './web'
+  database: 'mysql:5.7'
+  composer_version: '2.0.7'
+  xdebug: true
+  config:
+    php: lando.php.ini
+services:
+  appserver:
+    build_as_root:
+      - composer install
+    overrides:
+      environment:
+        DRUSH_OPTIONS_URI: "https://sealgt.lndo.site"
+  node:
+    type: node
+    build:
+      - 'cd web/themes/custom/sealgt/ && npm install'
+    globals:
+      gulp-cli: latest
+  pma:
+    type: phpmyadmin
+tooling:
+  node:
+    service: node
+  npm:
+    service: node
+  npx:
+    service: node
+  gulp:
+    service: node
+    cmd:
+      - 'cd web/themes/custom/sealgt/ && npx gulp'

@@ -1,0 +1,23 @@
+uuid: 0407cb9e-2641-40be-8c49-dd585e14571c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_links
+    - node.type.biography
+  module:
+    - link
+id: node.biography.field_social_links
+field_name: field_social_links
+entity_type: node
+bundle: biography
+label: 'Social Links'
+description: 'Links to personal social accounts.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

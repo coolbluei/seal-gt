@@ -1,0 +1,8 @@
+uuid: 46794f05-81af-4001-b961-63403ce11d3b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Personal Grouping'
+vid: personal_grouping
+description: ''
+weight: 0

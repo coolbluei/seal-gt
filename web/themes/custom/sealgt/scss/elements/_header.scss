@@ -1,0 +1,54 @@
+body #gt-logo {
+  height: 1.625rem;
+  margin: 0.7rem 0;
+}
+
+#janushead {
+  background: linear-gradient(black, $brand_blue);
+
+  .container {
+    display: flex;
+  }
+
+  .janus-logo-container {
+    img {
+      height: 9em;
+      padding: 1em 1em 1em 0;
+    }
+  }
+  .janus-header-text {
+    padding-top: 1em;
+  }
+  .site-name {
+    font-size: 4em;
+    color: $light_title;
+  }
+  .site-subname {
+    font-size: 1.5em;
+    color: $light_text;
+    line-height: 1.2;
+
+    strong {
+      color: $light_title;
+      text-transform: uppercase;
+    }
+    em {
+      font-style: unset;
+      font-size: 0.7em;
+    }
+  }
+}
+
+.navbar-toggler {
+  height: 2.25em;
+  background-size: contain;
+  &:not(.collapsed) {
+    background-size: contain;
+  }
+
+
+}
+
+#bottom-header .navbar {
+  margin: 1em 0;
+}

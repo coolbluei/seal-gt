@@ -1,0 +1,53 @@
+.main-container {
+  .bio-teaser {
+    .image-field img {
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.6em;
+      color: $brand_secondary;
+
+      a {
+        color: $brand_secondary;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+body .main-container .image-block a.btn {
+  display: block;
+  padding: 0.2em;
+  font-size: 0.9rem;
+}
+
+article.biography {
+  .image-block {
+    padding: 1rem;
+    margin: 0 auto 1em;
+    width: 332px;
+    box-shadow: 2px 2px 4px #ccc;
+
+    @media (min-width: 752px) {
+      position: relative;
+      float: right;
+      margin-left: 2em;
+
+
+    }
+
+    .text-fields {
+      div {
+        margin: 0.5em 0.25rem;
+      }
+    }
+  }
+  .field--name-field-position {
+    font-weight: bold;
+  }
+}
+
+

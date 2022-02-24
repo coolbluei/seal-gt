@@ -1,0 +1,29 @@
+uuid: dafd82ba-5883-4dc6-8131-3ffdf56ea653
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.homepage_flexslider
+  module:
+    - system
+    - views
+  theme:
+    - janus
+id: views_block__homepage_flexslider_block_1
+theme: janus
+region: banner
+weight: 0
+provider: null
+plugin: 'views_block:homepage_flexslider-block_1'
+settings:
+  id: 'views_block:homepage_flexslider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

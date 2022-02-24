@@ -1,0 +1,20 @@
+uuid: 46cb46e9-825a-4e87-a97c-4f3328641ed6
+langcode: en
+status: true
+dependencies:
+  module:
+    - gt_tools
+  theme:
+    - janus
+id: janus_footer_logo
+theme: janus
+region: footer_08
+weight: 0
+provider: null
+plugin: gt_footer_logo_block
+settings:
+  id: gt_footer_logo_block
+  label: 'GT gold footer: logo (required)'
+  provider: gt_tools
+  label_display: '0'
+visibility: {  }

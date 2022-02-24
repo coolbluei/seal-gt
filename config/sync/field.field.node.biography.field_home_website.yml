@@ -1,0 +1,23 @@
+uuid: e181f7c6-c502-4cc3-ac9b-03671c5ad93d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_website
+    - node.type.biography
+  module:
+    - link
+id: node.biography.field_home_website
+field_name: field_home_website
+entity_type: node
+bundle: biography
+label: 'Home Website'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

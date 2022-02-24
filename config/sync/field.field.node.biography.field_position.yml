@@ -1,0 +1,19 @@
+uuid: 0405373d-9bd8-48b1-a52e-cff52eb3fff6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position
+    - node.type.biography
+id: node.biography.field_position
+field_name: field_position
+entity_type: node
+bundle: biography
+label: Position
+description: 'Title for individual'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

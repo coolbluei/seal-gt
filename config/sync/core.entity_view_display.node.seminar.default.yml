@@ -1,0 +1,48 @@
+uuid: ef1062aa-a78b-47ac-9708-55c1fef9dced
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.seminar.body
+    - field.field.node.seminar.field_date
+    - field.field.node.seminar.field_presented_by
+    - node.type.seminar
+  module:
+    - datetime
+    - text
+    - user
+id: node.seminar.default
+targetEntityType: node
+bundle: seminar
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_presented_by:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

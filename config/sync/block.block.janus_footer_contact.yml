@@ -1,0 +1,20 @@
+uuid: e6774eca-fd34-4d1e-9f2f-cb9e659e8164
+langcode: en
+status: true
+dependencies:
+  module:
+    - gt_tools
+  theme:
+    - janus
+id: janus_footer_contact
+theme: janus
+region: footer_05
+weight: 0
+provider: null
+plugin: gt_footer_contact_block
+settings:
+  id: gt_footer_contact_block
+  label: 'GT gold footer: address, contact and map (required)'
+  provider: gt_tools
+  label_display: '0'
+visibility: {  }

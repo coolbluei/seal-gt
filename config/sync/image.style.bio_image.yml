@@ -1,0 +1,15 @@
+uuid: 9f66d5a7-06d8-4d97-9b00-2bbb1484bba7
+langcode: en
+status: true
+dependencies: {  }
+name: bio_image
+label: 'Bio Image'
+effects:
+  934b7d55-21b0-4dcb-aae7-6fbdba211d5c:
+    uuid: 934b7d55-21b0-4dcb-aae7-6fbdba211d5c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 400
+      anchor: center-center

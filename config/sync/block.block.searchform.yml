@@ -1,0 +1,21 @@
+uuid: d2e568e4-3261-457e-aa4f-99ae4c3c9476
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - janus
+id: searchform
+theme: janus
+region: search
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

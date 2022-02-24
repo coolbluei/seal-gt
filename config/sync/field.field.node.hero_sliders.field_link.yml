@@ -1,0 +1,23 @@
+uuid: 617070d9-6791-42f5-8f6c-f6a71919d2b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.hero_sliders
+  module:
+    - link
+id: node.hero_sliders.field_link
+field_name: field_link
+entity_type: node
+bundle: hero_sliders
+label: 'Call To Action Link'
+description: 'Optional link to content.  Can be external link.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

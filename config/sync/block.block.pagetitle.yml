@@ -1,0 +1,24 @@
+uuid: d3985dc1-a114-431a-8b71-6c7609866b35
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - janus
+id: pagetitle
+theme: janus
+region: before_content
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true

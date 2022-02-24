@@ -1,0 +1,22 @@
+uuid: d572d054-9c42-454b-86e7-eb1acd4f5b3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: seminar
+label: Seminar
+type: 'canonical_entities:node'
+pattern: '/seminar/[node:title]'
+selection_criteria:
+  cff6ac33-834e-4971-b2ce-803b8952de91:
+    id: node_type
+    bundles:
+      seminar: seminar
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cff6ac33-834e-4971-b2ce-803b8952de91
+selection_logic: and
+weight: -5
+relationships: {  }

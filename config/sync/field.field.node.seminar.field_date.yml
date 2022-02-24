@@ -1,0 +1,24 @@
+uuid: 63220490-ee8a-4f04-ab22-9458ea4c6b67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.seminar
+  module:
+    - datetime
+id: node.seminar.field_date
+field_name: field_date
+entity_type: node
+bundle: seminar
+label: Date
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

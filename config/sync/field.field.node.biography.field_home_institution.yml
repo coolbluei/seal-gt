@@ -1,0 +1,19 @@
+uuid: 025064fb-066d-4524-9608-f3fe129463f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_institution
+    - node.type.biography
+id: node.biography.field_home_institution
+field_name: field_home_institution
+entity_type: node
+bundle: biography
+label: 'Home Institution'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
