@@ -12,8 +12,10 @@ dependencies:
     - field.field.node.biography.field_position
     - field.field.node.biography.field_social_links
     - field.field.node.biography.field_sort_name
+    - image.style.medium
     - node.type.biography
   module:
+    - image
     - text
     - user
 id: node.biography.teaser
@@ -24,21 +26,29 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 1
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_image:
+    type: image
+    weight: 2
+    region: content
+    label: above
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_grouping: true
   field_home_institution: true
   field_home_website: true
-  field_image: true
   field_position: true
   field_social_links: true
   field_sort_name: true
