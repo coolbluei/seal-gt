@@ -5,9 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
-    - field.field.node.page.field_grouping
-    - field.field.node.page.field_home_institution
-    - field.field.node.page.field_home_website
     - node.type.page
   module:
     - text
@@ -30,7 +27,4 @@ content:
   links:
     weight: 101
     region: content
-hidden:
-  field_grouping: true
-  field_home_institution: true
-  field_home_website: true
+hidden: {  }

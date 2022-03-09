@@ -4,12 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_grouping
-    - field.field.node.page.field_home_institution
-    - field.field.node.page.field_home_website
     - node.type.page
   module:
-    - link
     - path
     - text
 _core:
@@ -35,32 +31,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_grouping:
-    weight: 121
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_home_institution:
-    weight: 122
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_home_website:
-    weight: 123
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
   path:
     type: path
     weight: 30
