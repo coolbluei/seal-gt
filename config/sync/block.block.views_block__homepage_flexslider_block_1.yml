@@ -1,0 +1,24 @@
+uuid: 2a2aa9e0-aa83-47b1-b314-71c484931877
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.homepage_flexslider
+  module:
+    - views
+  theme:
+    - sealgt
+id: views_block__homepage_flexslider_block_1
+theme: sealgt
+region: banner
+weight: 0
+provider: null
+plugin: 'views_block:homepage_flexslider-block_1'
+settings:
+  id: 'views_block:homepage_flexslider-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

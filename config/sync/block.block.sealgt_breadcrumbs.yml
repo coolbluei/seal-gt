@@ -10,8 +10,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: sealgt_breadcrumbs
 theme: sealgt
-region: alert
-weight: 0
+region: breadcrumbs
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:
