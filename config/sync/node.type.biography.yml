@@ -1,4 +1,4 @@
-uuid: c64499bf-6179-44e6-83c2-17676a3e20fc
+uuid: cbbf3374-9fe1-4c1a-b0a7-2e5393dd54e4
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 name: Biography
 type: biography
 description: ''

@@ -1,11 +1,11 @@
-uuid: ef2f167f-4385-498c-a594-1901dda39c3f
-name: 'JANUS GT-AE'
+uuid: d9bc2fcb-aa78-4cdd-a2c3-0a3aaf271b1d
+name: 'SEAL GT'
 mail: techteam@coolbluei.com
-slogan: 'Jet Propulsion'
+slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/23
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

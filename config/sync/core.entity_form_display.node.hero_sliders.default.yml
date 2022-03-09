@@ -1,4 +1,4 @@
-uuid: c31fac21-45c1-4b22-bd8b-123f2aa3613b
+uuid: 25282dcd-7d6c-49f4-84bd-7f5070ee2575
 langcode: en
 status: true
 dependencies:
@@ -9,6 +9,7 @@ dependencies:
     - node.type.hero_sliders
   module:
     - link
+    - media_library
     - path
 id: node.hero_sliders.default
 targetEntityType: node
@@ -22,7 +23,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_link:
-    weight: 124
+    weight: 121
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -30,17 +31,14 @@ content:
     type: link_default
     region: content
   field_media_image:
-    weight: 123
+    type: media_library_widget
+    weight: 122
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
     region: content
   field_subtitle:
-    weight: 122
+    weight: 123
     settings:
       size: 60
       placeholder: ''
@@ -92,9 +90,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-  url_redirects:
-    weight: 50
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden: {  }

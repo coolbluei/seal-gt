@@ -1,4 +1,4 @@
-uuid: 61b96efb-1ba8-4af0-b39f-36b1e5798e53
+uuid: e17e49ed-4ad2-4aa4-85f1-b5521a69bf9a
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ entity_type: node
 bundle: biography
 label: Grouping
 description: ''
-required: true
-translatable: false
+required: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

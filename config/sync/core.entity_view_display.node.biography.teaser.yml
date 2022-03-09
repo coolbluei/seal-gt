@@ -1,4 +1,4 @@
-uuid: 6f94778a-c0bb-4957-ba9f-015a6c6f6eed
+uuid: 0113f2ac-f57e-4341-b47e-f388dd62e94f
 langcode: en
 status: true
 dependencies:
@@ -12,38 +12,33 @@ dependencies:
     - field.field.node.biography.field_position
     - field.field.node.biography.field_social_links
     - field.field.node.biography.field_sort_name
-    - image.style.bio_image
     - node.type.biography
   module:
-    - image
+    - text
     - user
 id: node.biography.teaser
 targetEntityType: node
 bundle: biography
 mode: teaser
 content:
-  field_image:
-    type: image
-    weight: 0
-    region: content
+  body:
     label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
     settings:
-      image_style: bio_image
-      image_link: content
+      trim_length: 600
     third_party_settings: {  }
-  field_position:
-    type: string
-    weight: 1
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
+  links:
+    weight: 100
+    settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
-  body: true
   field_grouping: true
   field_home_institution: true
   field_home_website: true
+  field_image: true
+  field_position: true
   field_social_links: true
   field_sort_name: true
-  links: true

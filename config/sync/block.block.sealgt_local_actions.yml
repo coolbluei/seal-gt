@@ -1,0 +1,20 @@
+uuid: 62c855d6-e686-4751-a9c7-d773ed41a113
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sealgt
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: sealgt_local_actions
+theme: sealgt
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,4 +1,4 @@
-uuid: e181f7c6-c502-4cc3-ac9b-03671c5ad93d
+uuid: 47200b9f-8865-4543-9197-5820a83666fe
 langcode: en
 status: true
 dependencies:
@@ -14,10 +14,10 @@ bundle: biography
 label: 'Home Website'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  link_type: 16
-  title: 2
+  link_type: 17
+  title: 1
 field_type: link

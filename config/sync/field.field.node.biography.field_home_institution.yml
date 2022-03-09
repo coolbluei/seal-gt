@@ -1,4 +1,4 @@
-uuid: 025064fb-066d-4524-9608-f3fe129463f3
+uuid: 3b137f9c-ec76-451c-b486-84b236c8992c
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ bundle: biography
 label: 'Home Institution'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

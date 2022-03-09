@@ -1,12 +1,15 @@
-uuid: 27508741-1f86-46be-b718-52e23be470dc
+uuid: 5f453c87-1284-4540-b58e-87ac7be43a38
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_tags
+    - field.field.node.page.field_grouping
+    - field.field.node.page.field_home_institution
+    - field.field.node.page.field_home_website
     - node.type.page
   module:
+    - link
     - text
     - user
 _core:
@@ -23,13 +26,33 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_tags:
+  field_grouping:
     weight: 102
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_home_institution:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_home_website:
+    weight: 104
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 101

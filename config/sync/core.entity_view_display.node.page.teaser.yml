@@ -1,11 +1,13 @@
-uuid: ea212af8-76da-4a78-b8d4-fdfa7f92e380
+uuid: 435fbd69-5b2f-4775-ae20-6182c138b6ff
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
-    - field.field.node.page.field_tags
+    - field.field.node.page.field_grouping
+    - field.field.node.page.field_home_institution
+    - field.field.node.page.field_home_website
     - node.type.page
   module:
     - text
@@ -29,4 +31,6 @@ content:
     weight: 101
     region: content
 hidden:
-  field_tags: true
+  field_grouping: true
+  field_home_institution: true
+  field_home_website: true

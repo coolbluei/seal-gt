@@ -1,12 +1,15 @@
-uuid: a2dd384a-e2cd-4387-98de-fa1f9a843ffe
+uuid: 65b101af-63ff-4eae-a250-5fab8b7e4007
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_tags
+    - field.field.node.page.field_grouping
+    - field.field.node.page.field_home_institution
+    - field.field.node.page.field_home_website
     - node.type.page
   module:
+    - link
     - path
     - text
 _core:
@@ -32,7 +35,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_tags:
+  field_grouping:
     weight: 121
     settings:
       match_operator: CONTAINS
@@ -41,6 +44,22 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_home_institution:
+    weight: 122
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_home_website:
+    weight: 123
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   path:
     type: path
@@ -87,9 +106,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  url_redirects:
-    weight: 50
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden: {  }

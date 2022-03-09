@@ -1,4 +1,4 @@
-uuid: bee90a9b-c22a-4db2-8274-050737020bf1
+uuid: 4e850296-ff38-4420-bd24-643ca835b274
 langcode: en
 status: true
 dependencies:
@@ -14,65 +14,10 @@ dependencies:
     - image.style.thumbnail
     - node.type.biography
   module:
-    - field_group
     - image
     - link
     - path
     - text
-third_party_settings:
-  field_group:
-    group_tabs:
-      children:
-        - group_general
-        - group_details
-      parent_name: ''
-      weight: 0
-      format_type: tabs
-      region: content
-      format_settings:
-        show_empty_fields: false
-        id: ''
-        classes: ''
-        direction: horizontal
-        width_breakpoint: 640
-      label: tabs
-    group_details:
-      children:
-        - field_grouping
-        - field_home_institution
-        - field_home_website
-        - field_social_links
-        - body
-      parent_name: group_tabs
-      weight: 21
-      format_type: tab
-      region: content
-      format_settings:
-        show_empty_fields: false
-        id: ''
-        classes: ''
-        description: ''
-        formatter: closed
-        required_fields: true
-      label: Details
-    group_general:
-      children:
-        - title
-        - field_sort_name
-        - field_position
-        - field_image
-      parent_name: group_tabs
-      weight: 20
-      format_type: tab
-      region: content
-      format_settings:
-        show_empty_fields: false
-        id: ''
-        classes: ''
-        description: ''
-        formatter: open
-        required_fields: true
-      label: General
 id: node.biography.default
 targetEntityType: node
 bundle: biography
@@ -80,12 +25,12 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 8
+    weight: 121
     settings:
       rows: 9
-      placeholder: ''
       summary_rows: 3
-      show_summary: true
+      placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -95,13 +40,17 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_grouping:
-    weight: 4
-    settings: {  }
+    weight: 122
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete
     region: content
   field_home_institution:
-    weight: 5
+    weight: 123
     settings:
       size: 60
       placeholder: ''
@@ -109,7 +58,7 @@ content:
     type: string_textfield
     region: content
   field_home_website:
-    weight: 6
+    weight: 124
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -117,7 +66,7 @@ content:
     type: link_default
     region: content
   field_image:
-    weight: 5
+    weight: 125
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -125,7 +74,7 @@ content:
     type: image_image
     region: content
   field_position:
-    weight: 3
+    weight: 126
     settings:
       size: 60
       placeholder: ''
@@ -133,7 +82,7 @@ content:
     type: string_textfield
     region: content
   field_social_links:
-    weight: 7
+    weight: 127
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -141,7 +90,7 @@ content:
     type: link_default
     region: content
   field_sort_name:
-    weight: 2
+    weight: 128
     settings:
       size: 60
       placeholder: ''
@@ -150,7 +99,7 @@ content:
     region: content
   path:
     type: path
-    weight: 13
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -158,26 +107,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 15
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 120
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 16
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 1
+    weight: -5
     region: content
     settings:
       size: 60
@@ -185,17 +134,12 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
       match_limit: 10
     region: content
-    third_party_settings: {  }
-  url_redirects:
-    weight: 14
-    region: content
-    settings: {  }
     third_party_settings: {  }
 hidden: {  }

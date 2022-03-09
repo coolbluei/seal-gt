@@ -1,4 +1,4 @@
-uuid: 6b7f65f8-9ef1-42b9-8d91-79644478b1c6
+uuid: 9fdbdd1d-3343-4e5c-9040-c5ef04e90f8b
 langcode: en
 status: true
 dependencies:
@@ -16,8 +16,8 @@ bundle: hero_sliders
 mode: default
 content:
   field_link:
-    weight: 104
-    label: hidden
+    weight: 101
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -28,17 +28,17 @@ content:
     type: link
     region: content
   field_media_image:
-    weight: 103
-    label: hidden
+    type: entity_reference_entity_view
+    weight: 102
+    label: above
     settings:
-      view_mode: full
+      view_mode: default
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
     region: content
   field_subtitle:
-    weight: 102
-    label: hidden
+    weight: 103
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -46,7 +46,7 @@ content:
     region: content
   links:
     weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden: {  }

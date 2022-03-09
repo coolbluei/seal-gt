@@ -1,4 +1,4 @@
-uuid: df9b21fe-2174-4df4-94f9-e5e6100b64e0
+uuid: 30b4889d-b39f-4aaa-a5db-1ba2c33cfeee
 langcode: en
 status: true
 dependencies:
@@ -75,10 +75,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-  url_redirects:
-    weight: 50
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden:
   layout_builder__layout: true

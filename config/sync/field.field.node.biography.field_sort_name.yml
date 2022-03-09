@@ -1,4 +1,4 @@
-uuid: 0b4c60dc-10a6-4f2c-bf02-27f87e21721f
+uuid: 8d03aee5-fdfa-4721-987f-682b316dfff7
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ field_name: field_sort_name
 entity_type: node
 bundle: biography
 label: 'Sort Name'
-description: 'This field is hidden and only used for sorting.  Typically this field will be lastname then first name with no punctuation.  This provides a perfect alpha sort.  From there you can manipulate this field to move them by adding digits where you want them to move up.  For example adding 1 to the first character will move them to the top of the list of all names.  Adding 1 to the first name will move them to the top of the same lastnames.'
-required: true
+description: 'Hidden field used for sorting content within a list of the same content type.'
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

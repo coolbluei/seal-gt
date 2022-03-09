@@ -1,4 +1,4 @@
-uuid: 69d1bd71-1b5a-4ad2-aaac-227c0786143f
+uuid: 83d52271-1ec0-4164-afc7-6ba9856761b7
 langcode: en
 status: true
 dependencies: {  }
@@ -7,14 +7,14 @@ _core:
 id: default
 label: Default
 options:
-  animation: slide
+  animation: fade
   animationSpeed: 600
   direction: horizontal
   slideshow: true
   easing: swing
   smoothHeight: false
   reverse: false
-  slideshowSpeed: 4000
+  slideshowSpeed: 7000
   animationLoop: true
   randomize: false
   startAt: 0
@@ -44,6 +44,6 @@ options:
   pauseText: Pause
   playText: Play
   pauseOnAction: true
-  pauseOnHover: true
+  pauseOnHover: false
   controlsContainer: .flex-control-nav-container
   manualControls: ''

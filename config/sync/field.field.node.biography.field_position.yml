@@ -1,4 +1,4 @@
-uuid: 0405373d-9bd8-48b1-a52e-cff52eb3fff6
+uuid: d5822e0b-8c62-4067-b734-c713d77931df
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ field_name: field_position
 entity_type: node
 bundle: biography
 label: Position
-description: 'Title for individual'
+description: ''
 required: false
 translatable: false
 default_value: {  }

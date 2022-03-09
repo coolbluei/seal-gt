@@ -1,0 +1,22 @@
+uuid: 70c29662-2981-42cc-9fdc-9e43322e73dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sealgt
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: sealgt_breadcrumbs
+theme: sealgt
+region: alert
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

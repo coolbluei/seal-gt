@@ -1,4 +1,4 @@
-uuid: 0407cb9e-2641-40be-8c49-dd585e14571c
+uuid: 6bb88867-0bc9-47c7-b068-6223b6fc6407
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ field_name: field_social_links
 entity_type: node
 bundle: biography
 label: 'Social Links'
-description: 'Links to personal social accounts.'
+description: ''
 required: false
 translatable: false
 default_value: {  }

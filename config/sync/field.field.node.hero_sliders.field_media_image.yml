@@ -1,4 +1,4 @@
-uuid: 56ef43d5-d46f-42be-9d38-a3023e5afde8
+uuid: ed805943-73c7-4f12-b256-9ff9cb4baab9
 langcode: en
 status: true
 dependencies:
@@ -10,10 +10,10 @@ id: node.hero_sliders.field_media_image
 field_name: field_media_image
 entity_type: node
 bundle: hero_sliders
-label: Image
+label: 'Media Image'
 description: ''
-required: true
-translatable: true
+required: false
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

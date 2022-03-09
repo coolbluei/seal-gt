@@ -1,4 +1,4 @@
-uuid: 6a8f7096-9031-4124-90fd-9e0bf6256a7f
+uuid: 15b01064-4a0b-4f7e-b617-6b9041522373
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ field_name: field_subtitle
 entity_type: node
 bundle: hero_sliders
 label: Subtitle
-description: 'Optional subtitle for slider.'
+description: ''
 required: false
 translatable: false
 default_value: {  }
