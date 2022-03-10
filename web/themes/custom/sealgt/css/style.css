@@ -112,4 +112,7 @@ article.article .created-date {
   margin-bottom: 1em;
   font-weight: bold; }
 
+#block-views-block-news-block-news div.item {
+  margin-bottom: 1em; }
+
 /*# sourceMappingURL=style.css.map */

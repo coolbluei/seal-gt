@@ -8,8 +8,8 @@ _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
 id: sealgt_local_actions
 theme: sealgt
-region: breadcrumbs
-weight: -3
+region: before_content
+weight: -4
 provider: null
 plugin: local_actions_block
 settings:

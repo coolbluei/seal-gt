@@ -1,0 +1,20 @@
+uuid: fee502a9-4b19-403b-b360-6fd13f305979
+langcode: en
+status: true
+dependencies:
+  module:
+    - gt_tools
+  theme:
+    - sealgt
+id: gtfootercontactblock
+theme: sealgt
+region: footer_05
+weight: 0
+provider: null
+plugin: gt_footer_contact_block
+settings:
+  id: gt_footer_contact_block
+  label: 'GT footer contact block'
+  provider: gt_tools
+  label_display: visible
+visibility: {  }

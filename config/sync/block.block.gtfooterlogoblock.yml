@@ -1,0 +1,20 @@
+uuid: 74c239a4-1c3f-4dc0-a74a-de4ee0b1b74c
+langcode: en
+status: true
+dependencies:
+  module:
+    - gt_tools
+  theme:
+    - sealgt
+id: gtfooterlogoblock
+theme: sealgt
+region: footer_08
+weight: 0
+provider: null
+plugin: gt_footer_logo_block
+settings:
+  id: gt_footer_logo_block
+  label: 'GT footer logo block'
+  provider: gt_tools
+  label_display: visible
+visibility: {  }

@@ -1,22 +1,22 @@
-uuid: 2a2aa9e0-aa83-47b1-b314-71c484931877
+uuid: 5384185b-be21-4017-9945-d39807205a68
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.homepage_flexslider
+    - views.view.news
   module:
     - system
     - views
   theme:
     - sealgt
-id: views_block__homepage_flexslider_block_1
+id: views_block__news_block_news
 theme: sealgt
-region: banner
+region: content
 weight: 0
 provider: null
-plugin: 'views_block:homepage_flexslider-block_1'
+plugin: 'views_block:news-block_news'
 settings:
-  id: 'views_block:homepage_flexslider-block_1'
+  id: 'views_block:news-block_news'
   label: ''
   provider: views
   label_display: '0'
@@ -25,5 +25,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /news
     negate: false
