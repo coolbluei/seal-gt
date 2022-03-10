@@ -12,43 +12,38 @@ dependencies:
     - field.field.node.biography.field_position
     - field.field.node.biography.field_social_links
     - field.field.node.biography.field_sort_name
-    - image.style.medium
+    - image.style.bio_image
     - node.type.biography
   module:
     - image
-    - text
     - user
 id: node.biography.teaser
 targetEntityType: node
 bundle: biography
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 1
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   field_image:
     type: image
-    weight: 2
-    region: content
-    label: above
-    settings:
-      image_style: medium
-      image_link: ''
-    third_party_settings: {  }
-  links:
     weight: 0
     region: content
-    settings: {  }
+    label: hidden
+    settings:
+      image_style: bio_image
+      image_link: ''
+    third_party_settings: {  }
+  field_position:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
 hidden:
+  body: true
   field_grouping: true
   field_home_institution: true
   field_home_website: true
-  field_position: true
   field_social_links: true
   field_sort_name: true
+  links: true

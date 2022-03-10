@@ -26,12 +26,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     region: content
   field_home_institution:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false
@@ -39,7 +39,7 @@ content:
     type: string
     region: content
   field_home_website:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
@@ -51,7 +51,7 @@ content:
     type: link
     region: content
   field_image:
-    weight: 4
+    weight: 1
     label: hidden
     settings:
       image_style: medium
@@ -60,7 +60,7 @@ content:
     type: image
     region: content
   field_position:
-    weight: 5
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
@@ -68,7 +68,7 @@ content:
     type: string
     region: content
   field_social_links:
-    weight: 6
+    weight: 5
     label: hidden
     settings:
       trim_length: 80
