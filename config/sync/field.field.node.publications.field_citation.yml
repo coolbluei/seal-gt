@@ -1,0 +1,19 @@
+uuid: a90903cd-ab53-4859-b243-aeb03321517f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_citation
+    - node.type.publications
+id: node.publications.field_citation
+field_name: field_citation
+entity_type: node
+bundle: publications
+label: Citation
+description: 'Detailed location of article.  Include the journal, volume, and page(s), '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

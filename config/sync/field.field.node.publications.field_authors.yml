@@ -1,0 +1,19 @@
+uuid: 82acae3f-5e82-48b1-8d94-17b011d8139f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_authors
+    - node.type.publications
+id: node.publications.field_authors
+field_name: field_authors
+entity_type: node
+bundle: publications
+label: Authors
+description: "Include all authors.  Separate with semi-colon.  Do not end with a semi-colon.\r\ne.g.  John Doe; Jane Doe"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

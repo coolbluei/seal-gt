@@ -1,0 +1,69 @@
+uuid: 2e6b7896-4ee7-40f5-b199-6750f8cd454c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.publications.body
+    - field.field.node.publications.field_authors
+    - field.field.node.publications.field_citation
+    - field.field.node.publications.field_date_string
+    - field.field.node.publications.field_publication
+    - field.field.node.publications.field_publication_type
+    - node.type.publications
+  module:
+    - link
+    - user
+id: node.publications.default
+targetEntityType: node
+bundle: publications
+mode: default
+content:
+  field_authors:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_citation:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_date_string:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_publication:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_publication_type:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true

@@ -1,0 +1,19 @@
+uuid: 81113e21-449e-4613-a130-d74ddff074c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_string
+    - node.type.publications
+id: node.publications.field_date_string
+field_name: field_date_string
+entity_type: node
+bundle: publications
+label: 'Date String'
+description: 'Date of publication.  You can use any appropriate format.  Typical use is `February 2022`'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,17 @@
+uuid: 2da11074-39ef-403c-a3b7-3ce9366628ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Publications
+type: publications
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
