@@ -1,0 +1,25 @@
+uuid: ebccbbe0-914d-499f-8796-cade12dc06f3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8895e47f-8754-4c1a-a910-b4af52ebdf38'
+  module:
+    - block_content
+  theme:
+    - sealgt
+id: footercontent
+theme: sealgt
+region: footer_07
+weight: -7
+provider: null
+plugin: 'block_content:8895e47f-8754-4c1a-a910-b4af52ebdf38'
+settings:
+  id: 'block_content:8895e47f-8754-4c1a-a910-b4af52ebdf38'
+  label: 'Footer content'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

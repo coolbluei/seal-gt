@@ -1,0 +1,25 @@
+uuid: e974348d-3bae-45d7-a431-ae6f10895ca8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - sealgt
+id: footer
+theme: sealgt
+region: footer_06
+weight: -8
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
