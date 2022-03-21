@@ -1,0 +1,30 @@
+uuid: 6ac206e1-a0e3-4142-b01e-2502412b5def
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:38d7274e-b6e8-4c90-aba8-67ba3679402a'
+  module:
+    - block_content
+    - system
+  theme:
+    - sealgt
+id: alumni
+theme: sealgt
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:38d7274e-b6e8-4c90-aba8-67ba3679402a'
+settings:
+  id: 'block_content:38d7274e-b6e8-4c90-aba8-67ba3679402a'
+  label: Alumni
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /team
+    negate: false

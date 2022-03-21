@@ -91,7 +91,6 @@ display:
             field_publication: field_publication
             field_citation: field_citation
             field_date_string: field_date_string
-            edit_node: edit_node
           separator: ' | '
           hide_empty: false
       fields:
@@ -410,7 +409,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
