@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.publications.field_authors
     - field.field.node.publications.field_citation
     - field.field.node.publications.field_date_string
+    - field.field.node.publications.field_media_file
     - field.field.node.publications.field_publication
     - field.field.node.publications.field_publication_type
     - node.type.publications
@@ -36,5 +37,6 @@ hidden:
   field_authors: true
   field_citation: true
   field_date_string: true
+  field_media_file: true
   field_publication: true
   field_publication_type: true

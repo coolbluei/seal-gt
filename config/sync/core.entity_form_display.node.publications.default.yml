@@ -7,11 +7,13 @@ dependencies:
     - field.field.node.publications.field_authors
     - field.field.node.publications.field_citation
     - field.field.node.publications.field_date_string
+    - field.field.node.publications.field_media_file
     - field.field.node.publications.field_publication
     - field.field.node.publications.field_publication_type
     - node.type.publications
   module:
     - link
+    - media_library
     - path
 id: node.publications.default
 targetEntityType: node
@@ -47,6 +49,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_media_file:
+    type: media_library_widget
+    weight: 27
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
     region: content
   field_publication:
     weight: 8

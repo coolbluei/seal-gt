@@ -1,22 +1,22 @@
-uuid: 5384185b-be21-4017-9945-d39807205a68
+uuid: baf32acf-5aaf-4b8b-8df4-d11b3dfea4a3
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.news
+    - views.view.publication_blocks
   module:
     - system
     - views
   theme:
     - sealgt
-id: views_block__news_block_news
+id: views_block__publication_blocks_block_1
 theme: sealgt
 region: content
-weight: -5
+weight: 0
 provider: null
-plugin: 'views_block:news-block_news'
+plugin: 'views_block:publication_blocks-block_1'
 settings:
-  id: 'views_block:news-block_news'
+  id: 'views_block:publication_blocks-block_1'
   label: ''
   provider: views
   label_display: '0'
@@ -25,5 +25,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /news
+    pages: '<front>'
     negate: false

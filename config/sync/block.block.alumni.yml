@@ -12,7 +12,7 @@ dependencies:
 id: alumni
 theme: sealgt
 region: content
-weight: 0
+weight: -6
 provider: null
 plugin: 'block_content:38d7274e-b6e8-4c90-aba8-67ba3679402a'
 settings:
