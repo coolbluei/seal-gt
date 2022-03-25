@@ -115,4 +115,20 @@ article.article .created-date {
 #block-views-block-news-block-news div.item {
   margin-bottom: 1em; }
 
+.publication-view-page .views-exposed-form {
+  margin-bottom: 1em; }
+
+.publication-view-page .item-list {
+  margin: 1em 0; }
+  .publication-view-page .item-list ul li {
+    padding: 0.5em 0; }
+    .publication-view-page .item-list ul li.view-list-item::before {
+      font-family: FontAwesome;
+      content: '\f04d';
+      font-size: 0.6em;
+      top: -0.3em;
+      position: relative;
+      left: -0.7em;
+      color: #a4925a; }
+
 /*# sourceMappingURL=style.css.map */

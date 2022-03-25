@@ -607,7 +607,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Publications
+      title: 'Featured Publication'
       header: {  }
       footer: {  }
       empty: {  }

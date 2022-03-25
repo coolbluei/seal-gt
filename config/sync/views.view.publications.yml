@@ -83,7 +83,7 @@ display:
               rendered_strip: false
           row_class: ''
           default_row_class: true
-          type: ol
+          type: ul
           wrapper_class: item-list
           class: ''
       row:
