@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.publications.field_media_file
     - field.field.node.publications.field_publication
     - field.field.node.publications.field_publication_type
+    - field.field.node.publications.field_sort_string
     - node.type.publications
   module:
     - link
@@ -76,3 +77,4 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_sort_string: true

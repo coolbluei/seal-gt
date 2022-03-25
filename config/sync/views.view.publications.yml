@@ -607,6 +607,18 @@ display:
           error_message: true
           plugin_id: taxonomy_index_tid
       sorts:
+        field_sort_string_value:
+          id: field_sort_string_value
+          table: node__field_sort_string
+          field: field_sort_string_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
         created:
           id: created
           table: node_field_data

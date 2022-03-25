@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.publications.field_media_file
     - field.field.node.publications.field_publication
     - field.field.node.publications.field_publication_type
+    - field.field.node.publications.field_sort_string
     - node.type.publications
   module:
     - link
@@ -70,6 +71,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_sort_string:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   path:
     type: path
