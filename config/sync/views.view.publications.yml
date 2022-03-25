@@ -641,6 +641,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       use_ajax: true
+      css_class: publication-view-page
     cache_metadata:
       max-age: -1
       contexts:
