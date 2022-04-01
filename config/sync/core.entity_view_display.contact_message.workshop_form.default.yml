@@ -1,0 +1,101 @@
+uuid: a7da1cbe-b75e-43b7-8aca-5ce7ea1a512e
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.workshop_form
+    - field.field.contact_message.workshop_form.field_abstract_upload
+    - field.field.contact_message.workshop_form.field_affiliation
+    - field.field.contact_message.workshop_form.field_affiliation_address
+    - field.field.contact_message.workshop_form.field_affiliation_country
+    - field.field.contact_message.workshop_form.field_email
+    - field.field.contact_message.workshop_form.field_first_name
+    - field.field.contact_message.workshop_form.field_last_name
+    - field.field.contact_message.workshop_form.field_paper_title
+    - field.field.contact_message.workshop_form.field_paper_type
+  module:
+    - file
+    - options
+id: contact_message.workshop_form.default
+targetEntityType: contact_message
+bundle: workshop_form
+mode: default
+content:
+  field_abstract_upload:
+    weight: 9
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_affiliation:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_affiliation_address:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_affiliation_country:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_email:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_first_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_last_name:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_paper_title:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_paper_type:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

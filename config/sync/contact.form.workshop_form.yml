@@ -1,0 +1,13 @@
+uuid: d52c866c-6857-4f1f-9695-efc4cdfa6ee6
+langcode: en
+status: true
+dependencies: {  }
+id: workshop_form
+label: 'Workshop Form'
+recipients:
+  - john.a.christian@gatech.edu
+  - yelena@coolbluei.com
+reply: ''
+weight: 0
+message: 'Thank you for your submission.'
+redirect: /
