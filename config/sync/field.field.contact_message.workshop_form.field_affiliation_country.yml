@@ -11,7 +11,7 @@ entity_type: contact_message
 bundle: workshop_form
 label: 'Affiliation Country'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
