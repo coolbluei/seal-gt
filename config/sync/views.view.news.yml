@@ -51,7 +51,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 5
+          items_per_page: 50
           offset: 0
           id: 0
           total_pages: null
@@ -256,6 +256,36 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 2
+    display_options:
+      display_extenders: {  }
+      title: 'Recent News'
+      defaults:
+        title: false
+        pager: false
+        link_display: false
+        link_url: false
+      block_description: 'Recent News'
+      pager:
+        type: some
+        options:
+          items_per_page: 2
+          offset: 0
+      link_display: custom_url
+      link_url: /news
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags:

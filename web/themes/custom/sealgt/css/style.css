@@ -131,4 +131,7 @@ article.article .created-date {
       left: -0.7em;
       color: #a4925a; }
 
+.views-element-container > h2 {
+  margin-top: 1em; }
+
 /*# sourceMappingURL=style.css.map */
