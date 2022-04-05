@@ -1,0 +1,29 @@
+uuid: 4905e0df-f273-4f7b-93ed-02bcee41f15e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_download_media
+    - media.type.document
+    - paragraphs.paragraphs_type.workshop_callout
+id: paragraph.workshop_callout.field_download_media
+field_name: field_download_media
+entity_type: paragraph
+bundle: workshop_callout
+label: 'Download Media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

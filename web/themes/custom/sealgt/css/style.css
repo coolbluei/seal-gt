@@ -14,6 +14,9 @@ body h1, body h2, body h3, body h4, body h5, body h6, body .h1, body .h2, body .
 body #gt-page-title h1.js-quickedit-page-title.page-title {
   color: #404040 !important; }
 
+.margin-bottom-1em {
+  margin-bottom: 1em; }
+
 body #gt-logo {
   height: 1.625rem;
   margin: 0.7rem 0; }
@@ -133,5 +136,8 @@ article.article .created-date {
 
 .views-element-container > h2 {
   margin-top: 1em; }
+
+.paragraph--type--workshop-callout .image-wrapper img {
+  border: 2px solid black; }
 
 /*# sourceMappingURL=style.css.map */

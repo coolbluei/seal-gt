@@ -1,0 +1,65 @@
+uuid: 57b85f28-78c6-4b58-890e-65ff28aa6e86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.workshop_callout.field_body
+    - field.field.paragraph.workshop_callout.field_detail_page_link
+    - field.field.paragraph.workshop_callout.field_download_media
+    - field.field.paragraph.workshop_callout.field_image
+    - field.field.paragraph.workshop_callout.field_name
+    - paragraphs.paragraphs_type.workshop_callout
+  module:
+    - link
+    - text
+id: paragraph.workshop_callout.default
+targetEntityType: paragraph
+bundle: workshop_callout
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_detail_page_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_download_media:
+    type: entity_reference_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
