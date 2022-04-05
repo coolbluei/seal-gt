@@ -38,8 +38,8 @@ content:
     settings:
       title: Paragraph
       title_plural: Paragraphs
-      edit_mode: open
-      add_mode: select
+      edit_mode: closed
+      add_mode: button
       form_display_mode: default
       default_paragraph_type: workshop_callout
     third_party_settings: {  }
