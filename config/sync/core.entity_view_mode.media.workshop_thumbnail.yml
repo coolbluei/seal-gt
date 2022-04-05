@@ -1,0 +1,10 @@
+uuid: 798a9d2b-bd8d-4c66-8b8f-829c3fbe3e81
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.workshop_thumbnail
+label: 'Workshop Thumbnail'
+targetEntityType: media
+cache: true

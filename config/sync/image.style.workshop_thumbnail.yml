@@ -1,0 +1,15 @@
+uuid: 31bfa564-4c35-434f-93d2-eb2435aa8d41
+langcode: en
+status: true
+dependencies: {  }
+name: workshop_thumbnail
+label: 'Workshop Thumbnail'
+effects:
+  97f935f2-6585-4105-8082-a2256f5dc7f6:
+    uuid: 97f935f2-6585-4105-8082-a2256f5dc7f6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 320
+      anchor: center-center
