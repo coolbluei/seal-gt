@@ -20,3 +20,10 @@ body {
     color: $brand_secondary !important;
   }
 }
+
+.margin-bottom-1em {
+  margin-bottom: 1em;
+}
+.file--application-pdf::before {
+  padding-right: 0.4em;
+}

@@ -1,0 +1,10 @@
+uuid: e1d9d312-a33d-4931-b4bd-d989004af8ab
+langcode: en
+status: true
+dependencies: {  }
+id: workshop_callout
+label: 'Workshop Callout'
+icon_uuid: null
+icon_default: null
+description: 'List item to provide information about workshops.'
+behavior_plugins: {  }

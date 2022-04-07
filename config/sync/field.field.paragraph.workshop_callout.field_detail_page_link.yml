@@ -1,0 +1,23 @@
+uuid: bb271d2d-3d18-4fe8-9cc9-08aa44c4777e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_detail_page_link
+    - paragraphs.paragraphs_type.workshop_callout
+  module:
+    - link
+id: paragraph.workshop_callout.field_detail_page_link
+field_name: field_detail_page_link
+entity_type: paragraph
+bundle: workshop_callout
+label: 'Detail Page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

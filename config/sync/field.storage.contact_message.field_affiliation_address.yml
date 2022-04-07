@@ -1,0 +1,19 @@
+uuid: 8925ba80-12ee-4c3a-bd48-e93202a6c721
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+id: contact_message.field_affiliation_address
+field_name: field_affiliation_address
+entity_type: contact_message
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
