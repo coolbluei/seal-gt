@@ -9,7 +9,7 @@ uid: 1
 template: false
 archive: false
 id: workshop
-title: Workshop
+title: '3rd Space Imaging Workshop: Abstract Submission'
 description: ''
 category: ''
 elements: |-
@@ -54,7 +54,7 @@ elements: |-
         'Student Competition': 'Student Competition'
     abstract_upload:
       '#type': webform_document_file
-      '#title': 'Abstract Upload'
+      '#title': 'Abstract Upload [PDF only, 64MB limit]'
       '#required': true
       '#file_help': none
       '#file_extensions': pdf

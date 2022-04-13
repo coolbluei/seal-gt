@@ -4,13 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.landing_page.body
-    - field.field.node.landing_page.field_workshop_callouts
-    - field.field.node.landing_page.layout_builder__layout
     - node.type.landing_page
   module:
-    - entity_reference_revisions
     - layout_builder
-    - layout_discovery
     - text
     - user
 third_party_settings:
@@ -48,25 +44,6 @@ third_party_settings:
                 third_party_settings: {  }
             additional: {  }
             weight: 1
-          0436c7fb-0860-47a7-a47a-8d8d14b81aeb:
-            uuid: 0436c7fb-0860-47a7-a47a-8d8d14b81aeb
-            region: content
-            configuration:
-              id: 'field_block:node:landing_page:field_workshop_callouts'
-              label: 'Workshop Callouts'
-              provider: layout_builder
-              label_display: visible
-              formatter:
-                label: hidden
-                type: entity_reference_revisions_entity_view
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 2
         third_party_settings: {  }
 id: node.landing_page.default
 targetEntityType: node
@@ -80,19 +57,9 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_workshop_callouts:
-    type: entity_reference_revisions_entity_view
-    weight: 102
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden:
-  layout_builder__layout: true
+hidden: {  }

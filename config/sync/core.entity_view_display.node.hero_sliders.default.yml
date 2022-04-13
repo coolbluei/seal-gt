@@ -17,7 +17,7 @@ mode: default
 content:
   field_link:
     weight: 101
-    label: hidden
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -30,7 +30,7 @@ content:
   field_media_image:
     type: entity_reference_entity_view
     weight: 102
-    label: hidden
+    label: above
     settings:
       view_mode: default
       link: false
@@ -38,7 +38,7 @@ content:
     region: content
   field_subtitle:
     weight: 103
-    label: hidden
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -46,7 +46,7 @@ content:
     region: content
   links:
     weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden: {  }

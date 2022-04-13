@@ -245,7 +245,6 @@ display:
       fields: {  }
       arguments: {  }
       display_extenders: {  }
-      show_admin_links: false
     display_plugin: default
     display_title: Default
     id: default
