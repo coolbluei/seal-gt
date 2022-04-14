@@ -1,11 +1,11 @@
 uuid: d9bc2fcb-aa78-4cdd-a2c3-0a3aaf271b1d
-name: 'SEAL Project'
+name: 'Space Exploration Analysis Laboratory'
 mail: techteam@coolbluei.com
-slogan: ''
+slogan: (SEAL)
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/53
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
