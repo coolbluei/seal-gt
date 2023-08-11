@@ -32,6 +32,7 @@ drush-backups
 .console
 /.editorconfig
 
-*sql
-*sql.gz
+*.sql
+*.sql.gz
+*.zip
 db/
