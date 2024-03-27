@@ -24,22 +24,22 @@ bundle: biography
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 6
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 6
     region: content
   field_home_institution:
-    weight: 3
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 3
     region: content
   field_home_website:
-    weight: 4
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -48,27 +48,29 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 4
     region: content
   field_image:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: medium
       image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 1
     region: content
   field_position:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   field_social_links:
-    weight: 5
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -77,13 +79,13 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 5
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_grouping: true
   field_sort_name: true

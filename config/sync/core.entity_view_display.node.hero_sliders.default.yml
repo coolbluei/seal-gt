@@ -16,7 +16,7 @@ bundle: hero_sliders
 mode: default
 content:
   field_link:
-    weight: 101
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -25,28 +25,28 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 101
     region: content
   field_media_image:
     type: entity_reference_entity_view
-    weight: 102
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 102
     region: content
   field_subtitle:
-    weight: 103
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 103
     region: content
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
 hidden: {  }

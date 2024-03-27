@@ -15,8 +15,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: true
     enabled: true
+    allow_custom: true
     sections:
       -
         layout_id: layout_onecol
@@ -27,46 +27,46 @@ third_party_settings:
             uuid: 927457ed-8dac-48e4-bd6b-15e0fbf42fa8
             region: content
             configuration:
+              id: 'extra_field_block:node:landing_page:links'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:node:landing_page:links'
-            additional: {  }
             weight: 0
+            additional: {  }
           bb414655-47bd-476d-971e-8d34b609b15c:
             uuid: bb414655-47bd-476d-971e-8d34b609b15c
             region: content
             configuration:
+              id: 'field_block:node:landing_page:body'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:landing_page:body'
               formatter:
-                label: hidden
                 type: text_default
+                label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 1
+            additional: {  }
           0436c7fb-0860-47a7-a47a-8d8d14b81aeb:
             uuid: 0436c7fb-0860-47a7-a47a-8d8d14b81aeb
             region: content
             configuration:
               id: 'field_block:node:landing_page:field_workshop_callouts'
               label: 'Workshop Callouts'
-              provider: layout_builder
               label_display: visible
-              formatter:
-                label: hidden
-                type: entity_reference_revisions_entity_view
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
 id: node.landing_page.default
 targetEntityType: node
@@ -74,25 +74,25 @@ bundle: landing_page
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   field_workshop_callouts:
     type: entity_reference_revisions_entity_view
-    weight: 102
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 102
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   layout_builder__layout: true

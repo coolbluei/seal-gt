@@ -1,7 +1,7 @@
 name: SEAL GT
 type: theme
 description: 'SEAL GT Custom Subtheme'
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^8.8 || ^9 || ^10
 base theme: gt
 
 regions:

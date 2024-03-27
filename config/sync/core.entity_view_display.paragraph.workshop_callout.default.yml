@@ -18,14 +18,14 @@ bundle: workshop_callout
 mode: default
 content:
   field_body:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
   field_detail_page_link:
-    weight: 3
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -34,32 +34,32 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 3
     region: content
   field_download_media:
     type: entity_reference_entity_view
-    weight: 4
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 4
     region: content
   field_image:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: workshop_thumbnail
       link: false
     third_party_settings: {  }
+    weight: 0
     region: content
   field_name:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
 hidden: {  }
