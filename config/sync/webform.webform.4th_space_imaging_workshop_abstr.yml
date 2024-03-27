@@ -1,15 +1,15 @@
-uuid: 6d79e674-173f-419e-a788-e65355670e27
+uuid: 83124fc3-e7a9-49bf-8b66-f340687dcf65
 langcode: en
 status: open
 dependencies: {  }
 weight: 0
 open: null
 close: null
-uid: 1
+uid: 4
 template: false
 archive: false
-id: workshop
-title: '3rd Space Imaging Workshop: Abstract Submission'
+id: 4th_space_imaging_workshop_abstr
+title: '4th Space Imaging Workshop: Abstract Submission'
 description: ''
 categories: {  }
 elements: |-
@@ -61,7 +61,7 @@ elements: |-
       '#sanitize': true
   i_am_aware_that_selected_abstracts_or_final_manuscripts_will_be_:
     '#type': checkbox
-    '#title': 'I am aware that selected abstracts (or final manuscripts) will be posted on the workshop website and available for free public download.'
+    '#title': 'I give Georgia Tech permission to include my abstract (or final manuscript) on the Space Imaging Workshop website where it will be available for free public download'
     '#title_display': inline
     '#description_display': invisible
     '#required': true
@@ -79,7 +79,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
+  page_submit_path: /form/workshop-2024
   page_confirm_path: ''
   page_theme_name: ''
   form_title: both
