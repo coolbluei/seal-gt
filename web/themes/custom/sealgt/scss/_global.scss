@@ -27,3 +27,23 @@ body {
 .file--application-pdf::before {
   padding-right: 0.4em;
 }
+
+.main-container a, .main-container a.link {
+  text-decoration: underline;
+}
+
+.field--name-field-detail-page-link a {
+  background: var(--gt-gold);
+  border: 0 transparent;
+  border-radius: 2px;
+  color: var(--gt-black);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: .5em .75em;
+  text-decoration: none;
+
+  &:hover {
+    background: var(--gt-tech-light-gold);
+  }
+}
+
